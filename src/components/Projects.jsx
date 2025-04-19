@@ -7,7 +7,7 @@ const Projects = () => {
       description: 'A responsive portfolio website built with React and Tailwind CSS to showcase my skills and projects.',
       technologies: ['React', 'Tailwind CSS', 'Vite'],
       image: 'portfolio',
-      link: '#',
+      link: 'https://personal-portfolio-vachan.vercel.app/',
     },
     {
       title: 'Weather App',
