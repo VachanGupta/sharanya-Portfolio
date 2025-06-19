@@ -8,7 +8,6 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import AnimatedBackground from './components/AnimatedBackground';
-import CustomCursor from './components/CustomCursor';
 import './App.css';
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-900 text-white overflow-hidden">
-      <CustomCursor />
       <AnimatedBackground />
       <Navbar />
       
@@ -201,28 +199,7 @@ function App() {
             </motion.a>
           </motion.div>
           
-          <motion.div 
-            className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, y: [0, 10, 0] }}
-            transition={{ delay: 1.5, duration: 2, repeat: Infinity }}
-          >
-            <div className="flex flex-col items-center">
-              <span className="text-sm text-gray-400 mb-2">Scroll Down</span>
-              <motion.div 
-                className="w-6 h-10 rounded-full border-2 border-gray-400 flex justify-center p-1"
-                initial={{ opacity: 0.5 }}
-                animate={{ opacity: [0.5, 1, 0.5] }}
-                transition={{ duration: 2, repeat: Infinity }}
-              >
-                <motion.div 
-                  className="w-1 h-2 bg-gray-400 rounded-full"
-                  animate={{ y: [0, 6, 0] }}
-                  transition={{ duration: 2, repeat: Infinity }}
-                />
-              </motion.div>
-            </div>
-          </motion.div>
+
         </div>
       </motion.section>
       

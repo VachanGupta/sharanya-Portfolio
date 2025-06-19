@@ -6,10 +6,14 @@ const CustomCursor = () => {
   const [cursorVariant, setCursorVariant] = useState('default');
 
   useEffect(() => {
+    let animationFrameId;
+    
     const mouseMove = (e) => {
-      setMousePosition({
-        x: e.clientX,
-        y: e.clientY
+      animationFrameId = requestAnimationFrame(() => {
+        setMousePosition({
+          x: e.clientX,
+          y: e.clientY
+        });
       });
     };
 
@@ -28,6 +32,9 @@ const CustomCursor = () => {
 
     return () => {
       window.removeEventListener('mousemove', mouseMove);
+      if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId);
+      }
       links.forEach(link => {
         link.removeEventListener('mouseenter', handleLinkHover);
         link.removeEventListener('mouseleave', handleLinkLeave);
@@ -38,16 +45,14 @@ const CustomCursor = () => {
   // Cursor variants
   const variants = {
     default: {
-      x: mousePosition.x - 16,
-      y: mousePosition.y - 16,
+      transform: `translate(${mousePosition.x - 16}px, ${mousePosition.y - 16}px)`,
       height: 32,
       width: 32,
       backgroundColor: 'rgba(100, 108, 255, 0.3)',
       mixBlendMode: 'difference'
     },
     link: {
-      x: mousePosition.x - 24,
-      y: mousePosition.y - 24,
+      transform: `translate(${mousePosition.x - 24}px, ${mousePosition.y - 24}px)`,
       height: 48,
       width: 48,
       backgroundColor: 'rgba(100, 108, 255, 0.6)',
@@ -70,10 +75,9 @@ const CustomCursor = () => {
       variants={variants}
       animate={cursorVariant}
       transition={{
-        type: 'spring',
-        stiffness: 500,
-        damping: 28,
-        mass: 0.5
+        type: 'tween',
+        duration: 0.1,
+        ease: 'linear'
       }}
     />
   );
