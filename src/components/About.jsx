@@ -152,7 +152,7 @@ const About = () => {
                     }}
                     transition={{ duration: 3, repeat: Infinity }}
                   >
-                    VG
+                    SS
                   </motion.div>
                 </div>
               </motion.div>
