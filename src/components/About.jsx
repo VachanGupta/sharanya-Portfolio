@@ -186,7 +186,7 @@ const About = () => {
                 className="text-xl text-gray-200 mb-6 leading-relaxed"
                 variants={itemVariants}
               >
-                <span className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 inline-block mb-2">Hello!</span> I'm Vachan P, a first-year engineering student with a passion for coding and web development. 
+                <span className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 inline-block mb-2">Hello!</span> I'm Sharanya Singhal, a first-year engineering student with a passion for coding and web development. 
                 I love building beautiful, functional websites and applications that solve real-world problems.
               </motion.p>
               
