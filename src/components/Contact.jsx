@@ -63,7 +63,7 @@ const Contact = () => {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">Email</h3>
-              <p className="text-gray-300">mailid@gmail.com</p>
+              <p className="text-gray-300">myselfvachangupta@gmail.com</p>
             </div>
             <div className="p-4">
               <div className="w-12 h-12 mx-auto bg-purple-500 rounded-full flex items-center justify-center text-white text-xl mb-4">
@@ -72,7 +72,7 @@ const Contact = () => {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">Phone</h3>
-              <p className="text-gray-300">+91 phonenumer</p>
+              <p className="text-gray-300">+91 9971691203</p>
             </div>
             <div className="p-4">
               <div className="w-12 h-12 mx-auto bg-green-500 rounded-full flex items-center justify-center text-white text-xl mb-4">

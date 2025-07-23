@@ -2,47 +2,27 @@ import React from 'react';
 
 const Projects = () => {
   const projects = [
+
     {
-      title: '',
-      description: '',
-      technologies: [''],
+      title: 'Brainy',
+      description: ' Landing page for a generative AI, it also has a chatbot linked to it. ',
+      technologies: ['React, React-DOM, React Just Parallax, Scroll Lock, TailwindCSS, PostCSS, Autoprefixer'],
       image: 'algorithm',
-      link: '',
+      link: 'https://vachanbrainy.vercel.app/',
     },
     {
-      title: '',
-      description: '',
-      technologies: [''],
+      title: 'Admin Dashboard',
+      description: 'Admin dashboard with charts, user table, dark mode, responsive design',
+      technologies: ['React, React DOM, React Router DOM, React Icons, React Modal, Recharts'],
       image: 'algorithm',
-      link: '',
+      link: 'https://admin-dashboard-vachan.vercel.app/',
     },
     {
-      title: '',
-      description: '',
-      technologies: [''],
+      title: 'Dikshitra Algorithm',
+      description: 'An interactive web app that visually demonstrates pathfinding algorithms like Dijkstras through real-time animated simulations.',
+      technologies: ['Built with React, Node.js, and JavaScript, using custom algorithm logic and styled with HTML/CSS, with Prettier for formatting.'],
       image: 'algorithm',
-      link: '',
-    },
-    {
-      title: 'Xo Berry',
-      description: '',
-      technologies: [''],
-      image: 'algorithm',
-      link: '',
-    },
-    {
-      title: '',
-      description: '',
-      technologies: [''],
-      image: 'algorithm',
-      link: '',
-    },
-    {
-      title: '', 
-      description: '',
-      technologies: [''],
-      image: 'algorithm',
-      link: '',
+      link: 'https://dikshitra-algorithm-vachan.vercel.app/',
     },
   ];
 

@@ -116,7 +116,7 @@ function App() {
                   }}
                   transition={{ duration: 3, repeat: Infinity }}
                 >
-                  SS
+                  VG
                 </motion.div>
               </div>
             </motion.div>
@@ -129,7 +129,7 @@ function App() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             Hi, I'm <span className="relative inline-block">
-              <span className="relative z-10 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">Sharanya Singhal</span>
+              <span className="relative z-10 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">Vachan Gupta</span>
               <motion.span 
                 className="absolute bottom-0 left-0 w-full h-3 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 opacity-30 -z-10"
                 initial={{ width: 0 }}
@@ -145,7 +145,7 @@ function App() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            First-year Engineering Student & Web Developer
+            Second-year Engineering Student & Web Developer
           </motion.p>
           
           <motion.div 
